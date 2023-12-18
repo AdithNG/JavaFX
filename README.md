@@ -21,8 +21,8 @@ To resolve this issue, follow these steps:
 2. Click on `Run Configurations`.
 3. Select your main file name to run.
 4. Click on the `Arguments` tab.
-5. In the `VM arguments` text box, paste the following: <br>
-```--module-path "C:\Users\adith\javafx-sdk-20.0.1\lib" --add-modules javafx.controls,javafx.fxml``` <br>
+5. In the `VM arguments` text box, paste the following:<br>
+```--module-path "C:\Users\adith\javafx-sdk-20.0.1\lib" --add-modules javafx.controls,javafx.fxml```<br>
 This will configure the necessary VM arguments to properly run JavaFX applications.
 
 
