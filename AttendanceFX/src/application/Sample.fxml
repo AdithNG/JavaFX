@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="398.0" prefWidth="515.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SampleController">
+   <children>
+      <SplitMenuButton fx:id="splitMenuButton" layoutX="82.0" layoutY="52.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Select an option">
+        <items>
+          <MenuItem fx:id="A" mnemonicParsing="false" text="A - LOAD_LOG" />
+          <MenuItem fx:id="B" mnemonicParsing="false" text="B - PRINT_LOG" />
+            <MenuItem fx:id="C" mnemonicParsing="false" text="C - COUNT_LOG" />
+            <MenuItem fx:id="D" mnemonicParsing="false" text="D - LOAD_ROSTER" />
+            <MenuItem fx:id="E" mnemonicParsing="false" text="E - PRINT_ROSTER" />
+            <MenuItem fx:id="F" mnemonicParsing="false" text="F - COUNT_ROSTER" />
+            <MenuItem fx:id="G" mnemonicParsing="false" text="G - list_students_not_in_class" />
+            <MenuItem fx:id="H" mnemonicParsing="false" text="H - list_all_times_checking_in_and_out" />
+            <MenuItem fx:id="I" mnemonicParsing="false" text="I - list_all_times_checked_in" />
+            <MenuItem fx:id="J" mnemonicParsing="false" text="J - list_students_late_to_class" />
+            <MenuItem fx:id="K" mnemonicParsing="false" text="K - get_first_student_to_enter" />
+            <MenuItem fx:id="L" mnemonicParsing="false" text="L - print_attendance_data_for_student" />
+            <MenuItem fx:id="M" mnemonicParsing="false" text="M - is_present" />
+            <MenuItem fx:id="N" mnemonicParsing="false" text="N - list_all_students_checked_in" />
+            <MenuItem fx:id="O" mnemonicParsing="false" text="O - list_all_students_checked_in_before" />
+            <MenuItem fx:id="P" mnemonicParsing="false" text="P - list_students_attendance_count" />
+            <MenuItem fx:id="Q" mnemonicParsing="false" text="Q - get_first_student_to_enter" />
+            <MenuItem fx:id="R" mnemonicParsing="false" text="R - print_query_list" />
+            <MenuItem fx:id="S" mnemonicParsing="false" text="S - print_count" />
+        </items>
+      </SplitMenuButton>
+      <TextField fx:id="logFile" layoutX="83.0" layoutY="92.0" />
+      <Button fx:id="exitButton" layoutX="469.0" layoutY="14.0" mnemonicParsing="false" text="exit" />
+      <Label layoutX="32.0" layoutY="96.0" text="Log:" />
+      <Label layoutX="32.0" layoutY="126.0" text="Roster:" />
+      <TextField fx:id="rosterFile" layoutX="83.0" layoutY="122.0" />
+      <Label layoutX="297.0" layoutY="126.0" text="Date:" />
+      <Label layoutX="297.0" layoutY="157.0" text="Time:" />
+      <Label layoutX="294.0" layoutY="96.0" text="Name:" />
+      <TextField fx:id="date" layoutX="356.0" layoutY="122.0" />
+      <TextField fx:id="name" layoutX="356.0" layoutY="91.0" />
+      <TextField fx:id="time" layoutX="356.0" layoutY="153.0" />
+      <ScrollPane layoutX="1.0" layoutY="199.0" prefHeight="200.0" prefWidth="515.0">
+         <content>
+            <TextArea fx:id="queryField" prefHeight="196.0" prefWidth="510.0" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="queryButton" layoutX="355.0" layoutY="52.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="150.0" text="Query" />
+      <TextField fx:id="days" layoutX="82.0" layoutY="153.0" prefHeight="26.0" prefWidth="150.0" />
+      <Label layoutX="32.0" layoutY="155.0" text="Days:" />
+   </children>
+</AnchorPane>
