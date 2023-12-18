@@ -16,7 +16,7 @@ When trying to run Main.java, you might encounter an error like this:
 Error: Could not find or load main class application.Main <br>
 Caused by: java.lang.NoClassDefFoundError: javafx/application/Application <br>
 
-To resolve this issue, follow these steps:
+To resolve this issue on Eclipse, follow these steps:
 1. Right-click on `Main.java`.
 2. Click on `Run Configurations`.
 3. Select your main file name to run.
