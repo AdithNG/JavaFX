@@ -22,7 +22,9 @@ To resolve this issue, follow these steps:
 3. Select your main file name to run.
 4. Click on the `Arguments` tab.
 5. In the `VM arguments` text box, paste the following:<br>
-```--module-path "C:\Users\adith\javafx-sdk-20.0.1\lib" --add-modules javafx.controls,javafx.fxml```<br><br>
-This will configure the necessary VM arguments to properly run JavaFX applications.
+Copy this line if you’re on Windows:<br>
+```--module-path "\path\to\javafx-sdk-17\lib" --add-modules javafx.controls,javafx.fxml```<br>
+Copy this line if you’re on Mac or Linux:<br>
+```--module-path /path/to/javafx-sdk-17/lib --add-modules javafx.controls,javafx.fxml```<br>
 
 
